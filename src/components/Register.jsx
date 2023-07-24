@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import * as icons from "react-feather";
+import {AlertCircle} from "react-feather";
 
 /**
  * @param {{ bookFlip: React.MouseEventHandler<HTMLButtonElement> | undefined; }} props
@@ -79,7 +79,7 @@ export function Register(props) {
                   : "absolute top-[-5px] m-0 p-0 opacity-0 text-[0] h-0"
               }
             >
-              <icons.AlertCircle color="#EC8C2D" size={16} />
+              <AlertCircle color="#EC8C2D" size={16} />
               This email address is used.
             </p>
             <input
@@ -99,7 +99,7 @@ export function Register(props) {
                   : "absolute top-[-5px] m-0 p-0 opacity-0 text-[0] h-0"
               }
             >
-              <icons.AlertCircle color="#dd7421" size={19} />
+              <AlertCircle color="#dd7421" size={19} />
               8-16 charakters, needs to include uppercase, lowercase letters,
               and minimum 1 number
             </p>
@@ -120,7 +120,7 @@ export function Register(props) {
                   : "absolute top-[-5px] m-0 p-0 opacity-0 text-[0] h-0"
               }
             >
-              <icons.AlertCircle color="#dd7421" size={16} />
+              <AlertCircle color="#dd7421" size={16} />
               Password dont match
             </p>
             <p className="mb-4 mt-1 font-medium text-color-primary">

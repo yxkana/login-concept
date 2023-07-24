@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-import * as icons from "react-feather";
+import {AlertCircle} from "react-feather";
 
 
 
@@ -33,7 +33,7 @@ export function Login(props) {
             autoComplete="off"
             className="login-input"
             type="email"
-            placeholder="something..@email.com"
+            placeholder="example@email.com"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             required
@@ -46,7 +46,7 @@ export function Login(props) {
                 : "absolute top-[-5px] m-0 h-0 p-0 text-[0] opacity-0"
             }
           >
-            <icons.AlertCircle color="#EC8C2D" size={16} />
+            <AlertCircle color="#EC8C2D" size={16} />
             Wrong email or password
           </p>
           <input
@@ -67,7 +67,7 @@ export function Login(props) {
           </p>
           <button
             disabled={email === "" && pwd === "" ? true : false}
-            className="bg-color-tercelary hover:bg-color-tercelary2 text-color-whitesh m-auto mb-3 w-[50%] rounded-lg p-2 text-lg font-semibold shadow-md hover:shadow-lg"
+            className="bg-color-tercelary hover:cursor-pointer hover:bg-color-tercelary2 text-color-whitesh m-auto mb-3 w-[50%] rounded-lg p-2 text-lg font-semibold shadow-md hover:shadow-lg"
           >
             Login
           </button>
